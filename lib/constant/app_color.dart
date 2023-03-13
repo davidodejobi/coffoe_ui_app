@@ -19,6 +19,6 @@ class AppColor {
   static const Color kDarkPrimaryColor = Color(0xFFB87651);
   static const Color kDarkGreyColor = Color(0xFFFFFF8C);
   static const Color kDarkBackgroundColor = Color(0x00000000);
-  static const Color kDarkButtonBackground = Color(0x1E1F22D9);
+  static const Color kDarkButtonBackground = Color(0xFF1A1A1D);
   static const Color kDarkTextColor = Colors.white;
 }

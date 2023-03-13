@@ -1,4 +1,5 @@
 import 'package:coffoe_ui_app/core/theme.dart';
+import 'package:coffoe_ui_app/view/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -29,16 +30,7 @@ class MyApp extends ConsumerWidget {
         darkTheme: AppTheme.dark(),
         theme: AppTheme.light(),
         themeMode: appTheme.currentTheme,
-        home: const Scaffold(
-          body: Center(
-            child: Text(
-              'Hello World',
-              style: TextStyle(
-                fontSize: 24.0,
-              ),
-            ),
-          ),
-        ),
+        home: const Home(),
       ),
     );
   }

@@ -3,12 +3,12 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 extension AddImage on String {
   Widget addImage() {
-    return Image.asset('assets/images/$this.png');
+    return Image.asset('assets/images/$this.jpeg');
   }
 
   Widget addImageWithSize({double size = 0.0}) {
     return Image.asset(
-      'assets/images/$this.png',
+      'assets/images/$this.jpeg',
       height: size,
       width: size,
     );
@@ -18,10 +18,19 @@ extension AddImage on String {
 extension AddSvgImage on String {
   Widget addSvgImage() {
     return SvgPicture.asset(
-      this,
+      'assets/svgs/$this.svg',
       semanticsLabel: 'SVG Image',
       height: 24,
       width: 24,
+    );
+  }
+
+  Widget addSvgImageWithSize({double size = 0.0}) {
+    return SvgPicture.asset(
+      'assets/svgs/$this.svg',
+      semanticsLabel: 'SVG Image',
+      height: size,
+      width: size,
     );
   }
 }

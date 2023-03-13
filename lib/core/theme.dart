@@ -77,7 +77,7 @@ class AppTheme extends ChangeNotifier {
           fontSize: 30.0.sp,
           fontFamily: 'Poppins',
           color: AppColor.kLightTextColor,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
         headlineMedium: TextStyle(
           fontSize: 26.0.sp,
@@ -162,7 +162,7 @@ class AppTheme extends ChangeNotifier {
         border: InputBorder.none,
       ),
       appBarTheme: const AppBarTheme(
-        color: AppColor.kDarkPrimaryColor,
+        color: AppColor.kDarkBackgroundColor,
         elevation: 0,
       ),
       textTheme: TextTheme(
@@ -182,7 +182,7 @@ class AppTheme extends ChangeNotifier {
           fontSize: 30.0.sp,
           fontFamily: 'Poppins',
           color: AppColor.kDarkTextColor,
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.w600,
         ),
         headlineMedium: TextStyle(
           fontSize: 26.0.sp,
