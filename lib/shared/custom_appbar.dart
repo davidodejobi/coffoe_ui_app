@@ -13,8 +13,8 @@ PreferredSize customAppbar(BuildContext context) {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            height: 40.r,
-            width: 40.r,
+            height: 35.r,
+            width: 35.r,
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
@@ -50,8 +50,8 @@ PreferredSize customAppbar(BuildContext context) {
               imageUrl:
                   'https://askmicrobiology.com/wp-content/uploads/2019/08/person-image-806x440.png',
               imageBuilder: (context, imageProvider) => Container(
-                width: 40.r,
-                height: 40.r,
+                width: 35.r,
+                height: 35.r,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   image: DecorationImage(
