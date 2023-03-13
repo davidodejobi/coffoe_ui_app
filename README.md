@@ -7,7 +7,7 @@ Figma link (Author unknown):
 https://www.figma.com/file/M34CVWkA6BTEcFasJ5ANTB/online-ordering-app-for-cafe-(Community)?node-id=102%3A2&t=4kCPjggz33tb7IR2-0
 
 ## live demo
-https://user-images.githubusercontent.com/63846399/224726494-13c338df-112b-4a4f-a0c6-0a0ac06d909c.mp4
+https://user-images.githubusercontent.com/63846399/224804648-63385478-6bb0-4f8a-ad7f-07b22245a8f5.mov
 
 ## Tech Stack
 
