@@ -57,6 +57,7 @@ extension TextExtension on String {
     TextAlign? textAlign,
     TextOverflow? overflow,
     int? maxLines,
+    double? height,
   }) {
     return Text(
       this,
@@ -64,6 +65,7 @@ extension TextExtension on String {
             color: color,
             fontSize: fontSize,
             fontWeight: fontWeight,
+            height: height,
           ),
       textAlign: textAlign,
       overflow: overflow,

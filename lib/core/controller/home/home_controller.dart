@@ -21,22 +21,22 @@ class CoffeeController extends ChangeNotifier {
     'Frappuccino',
   ];
 
-  final List<CoffoeModel> _availCoffoes = [
-    CoffoeModel(
+  final List<CoffeeModel> _availCoffoes = [
+    CoffeeModel(
       name: 'Espresso',
       image: 'coffoe1',
       additionals: 'Milk, Sugar',
       description: 'A strong and rich coffee served in a small cup.',
       price: '\$3.50',
     ),
-    CoffoeModel(
+    CoffeeModel(
       name: 'Latte',
       image: 'coffoe2',
       additionals: 'Vanilla syrup, Whipped cream',
       description: 'A creamy espresso drink topped with steamed milk foam.',
       price: '\$4.00',
     ),
-    CoffoeModel(
+    CoffeeModel(
       name: 'Cappuccino',
       image: 'coffoe3',
       additionals: 'Cinnamon, Cocoa powder',
@@ -44,9 +44,9 @@ class CoffeeController extends ChangeNotifier {
           'A classic Italian espresso drink with frothy milk and foam.',
       price: '\$3.75',
     ),
-    CoffoeModel(
+    CoffeeModel(
       name: 'Mocha',
-      image: 'coffoe1',
+      image: 'coffoe4',
       additionals: 'Chocolate syrup, Whipped cream',
       description: 'A decadent espresso drink with steamed milk and chocolate.',
       price: '\$4.25',
@@ -55,7 +55,7 @@ class CoffeeController extends ChangeNotifier {
 
   String get selectedCoffee => _selectedCoffee;
   List<String> get coffees => _coffees;
-  List<CoffoeModel> get availCoffees => _availCoffoes;
+  List<CoffeeModel> get availCoffees => _availCoffoes;
 
   void selectCoffoe(int index) {
     _selectedCoffee = _coffees[index];

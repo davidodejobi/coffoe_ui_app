@@ -11,7 +11,7 @@ class CoffeeCard extends StatelessWidget {
     required this.index,
   }) : super(key: key);
 
-  final List<CoffoeModel> coffoeImage;
+  final List<CoffeeModel> coffoeImage;
   final int index;
 
   @override

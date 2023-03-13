@@ -1,5 +1,7 @@
+import 'package:coffoe_ui_app/view/details/details.dart';
 import 'package:coffoe_ui_app/view/home/widgets/coffee_card.dart';
 import 'package:coffoe_ui_app/view/home/widgets/special_coffee_card.dart';
+import 'package:coffoe_ui_app/view/shared/custom_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -7,7 +9,6 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:coffoe_ui_app/constant/app_color.dart';
 import 'package:coffoe_ui_app/constant/extensions/extensions.dart';
 import 'package:coffoe_ui_app/core/controller/home/home_controller.dart';
-import 'package:coffoe_ui_app/shared/custom_appbar.dart';
 import 'package:coffoe_ui_app/view/home/widgets/custom_tabbar.dart';
 
 class Home extends StatelessWidget {
@@ -74,29 +75,44 @@ class Home extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   itemCount: coffoeImage.length,
                   itemBuilder: (context, index) {
-                    return Stack(
-                      children: [
-                        CoffeeCard(
-                          coffoeImage: coffoeImage,
-                          index: index,
-                        ),
-                        Positioned(
-                          right: 10,
-                          bottom: 20,
-                          child: Container(
-                            height: 30.h,
-                            width: 30.h,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: AppColor.kDarkPrimaryColor,
-                            ),
-                            child: const Icon(
-                              Icons.add,
-                              color: Colors.black,
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Details(
+                              coffeeModel: coffoeImage[index],
                             ),
                           ),
-                        )
-                      ],
+                        );
+                      },
+                      child: Stack(
+                        children: [
+                          Hero(
+                            tag: coffoeImage[index].image,
+                            child: CoffeeCard(
+                              coffoeImage: coffoeImage,
+                              index: index,
+                            ),
+                          ),
+                          Positioned(
+                            right: 10,
+                            bottom: 20,
+                            child: Container(
+                              height: 30.h,
+                              width: 30.h,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                color: AppColor.kDarkPrimaryColor,
+                              ),
+                              child: const Icon(
+                                Icons.add,
+                                color: Colors.black,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     );
                   },
                 ),
